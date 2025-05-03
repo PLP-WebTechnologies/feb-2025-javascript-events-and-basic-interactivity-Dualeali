@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive JS Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 id="heading">Welcome to Duale's Interactive Page 🎉</h1>
+  </header>
+
+  <section class="controls">
+    <button id="colorBtn">Click Me!</button>
+    <input type="text" id="liveInput" placeholder="Type your magic...">
+  </section>
+
+  <section class="gallery">
+    <img src="duale.jpg" alt="Duale">
+    <img src="mahad.jpg" alt="Mahad">
+    <img src="descrapper.jpg" alt="Descrapper">
+    <img src="nurina.jpg" alt="Nurina">
+  </section>
+
+  <section class="tabs">
+    <div class="tab-buttons">
+      <button class="tab-btn" data-tab="tab1">About</button>
+      <button class="tab-btn" data-tab="tab2">Gallery</button>
+      <button class="tab-btn" data-tab="tab3">Contact</button>
+    </div>
+    <div class="tab-content" id="tab1">I cant believe that i build this💪</div>
+    <div class="tab-content" id="tab2" style="display:none;">We have images of Duale, Mahad, Descrapper, and Nurina</div>
+    <div class="tab-content" id="tab3" style="display:none;">Contact us at: descrapper@tech.com</div>
+  </section>
+
+  <section class="form">
+    <h2>Sign Up Form</h2>
+    <form id="signupForm">
+      <input type="text" id="username" placeholder="Your name" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="password" id="password" placeholder="Password (min 8 chars)" required>
+      <button type="submit">Submit</button>
+      <p id="feedback"></p>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
